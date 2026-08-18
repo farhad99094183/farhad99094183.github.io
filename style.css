@@ -1,4 +1,3 @@
-/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -12,15 +11,11 @@ body {
     min-height: 100vh;
     direction: rtl;
 }
-
-/* Container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
-
-/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -62,8 +57,6 @@ nav a:hover {
     color: #ffd700;
     background: rgba(255, 215, 0, 0.1);
 }
-
-/* Hero Section */
 .hero {
     min-height: 80vh;
     display: flex;
@@ -90,6 +83,13 @@ nav a:hover {
     border: 5px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 20px 60px rgba(245, 87, 108, 0.3);
     animation: float 3s ease-in-out infinite;
+    overflow: hidden;
+}
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 @keyframes float {
@@ -155,6 +155,19 @@ h1 {
     transform: translateY(-3px);
     box-shadow: 0 12px 40px rgba(245, 87, 108, 0.5);
 }
+#phoneDisplay {
+    background: #ffffff;
+    color: #333333;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    display: none;
+    margin-top: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid #ffd700;
+    direction: ltr;
+}
 
 .btn-secondary {
     background: rgba(255, 255, 255, 0.1);
@@ -167,7 +180,6 @@ h1 {
     transform: translateY(-3px);
 }
 
-/* About Section */
 .about, .skills, .contact {
     padding: 80px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -221,7 +233,6 @@ h2 i {
     color: #ffd700;
 }
 
-/* Skills Section */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -277,7 +288,6 @@ h2 i {
     opacity: 0.7;
 }
 
-/* Contact Section */
 .contact-content {
     max-width: 700px;
     margin: 0 auto;
@@ -317,8 +327,6 @@ h2 i {
 .social-link span {
     font-size: 14px;
 }
-
-/* Footer */
 footer {
     padding: 40px 0;
     text-align: center;
@@ -341,8 +349,6 @@ footer p {
     font-size: 13px;
     opacity: 0.4;
 }
-
-/* Responsive */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -387,4 +393,4 @@ footer p {
     .social-links {
         grid-template-columns: repeat(2, 1fr);
     }
-}
+}            
